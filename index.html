@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat Kotków 🐱</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fb;
+            color: #40343b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9fcf, #b99cff);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #9b5b9d;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6fae;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .title {
+            text-align: center;
+            color: #9b5b9d;
+            font-size: 2.3rem;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(120, 70, 120, 0.12);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .cat {
+            font-size: 5rem;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #a35ba7;
+            margin-bottom: 10px;
+        }
+
+        .facts {
+            background: #f3e9ff;
+            border-radius: 25px;
+        }
+
+        .facts ul {
+            max-width: 700px;
+            margin: auto;
+            list-style: none;
+        }
+
+        .facts li {
+            background: white;
+            margin: 12px 0;
+            padding: 15px 20px;
+            border-radius: 12px;
+        }
+
+        .facts li::before {
+            content: "🐾 ";
+        }
+
+        .button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: #ff79b5;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #e95d9c;
+            transform: scale(1.05);
+        }
+
+        #catFact {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #8c5a91;
+        }
+
+        footer {
+            background: #40343b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐱 Świat Kotków 🐱</h1>
+        <p>Małe łapki, wielkie osobowości!</p>
+    </header>
+
+    <nav>
+        <a href="#o-kotkach">O kotkach</a>
+        <a href="#kotki">Kotki</a>
+        <a href="#ciekawostki">Ciekawostki</a>
+    </nav>
+
+    <section id="o-kotkach">
+        <h2 class="title">O kotkach 💕</h2>
+
+        <p class="about">
+            Koty to niezwykłe zwierzęta, które od tysięcy lat
+            towarzyszą ludziom. Są ciekawskie, niezależne, zabawne
+            i potrafią być bardzo czułe. Każdy kot ma swój własny
+            charakter — dokładnie tak jak człowiek!
+        </p>
+    </section>
+
+    <section id="kotki">
+        <h2 class="title">Poznaj nasze kotki 😻</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="cat">🐱</div>
+                <h3>Mruczek</h3>
+                <p>
+                    Uwielbia spać na miękkich kocykach
+                    i mruczeć przy głaskaniu.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">😺</div>
+                <h3>Łapka</h3>
+                <p>
+                    Ma mnóstwo energii i całymi dniami
+                    bawi się swoją ulubioną piłeczką.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">😸</div>
+                <h3>Figa</h3>
+                <p>
+                    Jest ciekawska i musi sprawdzić
+                    każdą nową rzecz w domu.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="cat">😻</div>
+                <h3>Puszek</h3>
+                <p>
+                    Najbardziej na świecie kocha drzemki
+                    i przytulanie.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ciekawostki">
+        <div class="facts">
+            <h2 class="title">Ciekawostki o kotach 🐾</h2>
+
+            <ul>
+                <li>Koty potrafią spać nawet kilkanaście godzin dziennie.</li>
+                <li>Każdy kot ma unikalny wzór nosa.</li>
+                <li>Koty używają mruczenia nie tylko wtedy, gdy są zadowolone.</li>
+                <li>Wąsy pomagają kotom orientować się w otoczeniu.</li>
+                <li>Koty potrafią obracać uszy w różne strony.</li>
+            </ul>
+
+            <button class="button" onclick="showFact()">
+                🎲 Losuj ciekawostkę
+            </button>
+
+            <p id="catFact"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>🐾 Stworzone z miłości do kotków 🐾</p>
+    </footer>
+
+    <script>
+        const facts = [
+            "Koty mają bardzo dobry słuch. 👂",
+            "Nos każdego kota ma wyjątkowy wzór! 🐱",
+            "Koty potrafią skakać na kilka razy większą wysokość niż ich ciało. 🦘",
+            "Mruczenie kota może mieć różne znaczenia. 💕",
+            "Kocie wąsy pomagają oceniać przestrzeń. 🐾"
+        ];
+
+        function showFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById("catFact").textContent =
+                facts[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
